@@ -1,0 +1,104 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #050b0e;
+  background-image: url(https://uploads-ssl.webflow.com/60afa8d90709d6674a087a87/60afa9e888674ec9f1bf06a2_bg.svg);
+  background-position: 0 0; 
+    background-size: 970px 1024px;
+  */
+  background-color: transparent;
+  min-height: calc(100vh - 60px);
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  display: block;
+}
+
+.stars {
+  background: #000 url("./stars.png") repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url("./twinkling.png") repeat top center;
+  z-index: 1;
+
+  -moz-animation: move-twink-back 300s ease infinite;
+  -ms-animation: move-twink-back 300s ease infinite;
+  -o-animation: move-twink-back 300s ease infinite;
+  -webkit-animation: move-twink-back 300s ease infinite;
+  animation: move-twink-back 300s ease infinite;
+}
+
+.pageInner{
+  z-index: 10;
+}
