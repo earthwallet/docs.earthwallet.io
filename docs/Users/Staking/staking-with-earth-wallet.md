@@ -41,10 +41,4 @@ sidebar_position: 2
 
 That's how you can stake ETH using Earth Wallet!
 
-
-
-
-
-
-
 Anything **unclear** or **issue** in this docs? [Please connect at Discord!](https://discord.gg/bPBN9qShUr)
